@@ -4,12 +4,14 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="img/dog.png">
     <title>Jeel's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <!-- p has title, style(font-size, background-color) -->
 <!-- img has src, alt, width, height, href -->
 <!-- a has href, palce img inside it, a places links -->
 <body>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
     <h1 title="Heading">
         Jeel Vekaria
     </h1>
@@ -166,16 +168,22 @@
         function imagechange(){
             if(flipflop%2==0){
                 document.getElementById("changeText").innerHTML = "This is shown for the second time";
+                document.getElementById("changeText").style.color="blue";
+                document.getElementById("changeText").style.backgroundColor="black";
+                document.getElementById("changeText").style.fontSize="20px";
             }
             else{
                 document.getElementById("changeText").innerHTML = "This is shown for the third time";
+                document.getElementById("changeText").style.color="green";
+                document.getElementById("changeText").style.backgroundColor="white";
+                document.getElementById("changeText").style.fontSize="25px";
             }
             flipflop++;
         }
     </script>
 
 <br>
-<img src="img/red.png" style="float:right;" id="gtsc" onclick="switchColor()">
+<img src="img/red.png" style="float:left;" id="gtsc" onclick="switchColor()">
 
 <script>
     var sc=0;
@@ -197,6 +205,17 @@
     }
 
 </script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div style="border: 1px solid black;width:400px;height:500px;" >
+    <img src="img/blue.png" style="width:401px;">
+    <p style="text-align:center;">highlight</p>
+</div>
 
 
 
