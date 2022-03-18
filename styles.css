@@ -1,6 +1,10 @@
 body {
   background-color: rgb(150, 231, 220);
   font-family: verdana;
+  background-image: url('img/wallpaper.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 h1 {
   color: rgb(0, 0, 0);
@@ -13,6 +17,7 @@ h1 {
   padding: 2px;
   /* Margin is the space outside the box between the box and the space */
   margin: 20px;
+  border-radius: 200px;
 }
 p {
   color: rgb(0, 0, 0);
@@ -36,4 +41,22 @@ a:hover, a:active{
 
 .button{
     color: red;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-radius: 10px;
+    /* background-color: white; */
+    padding: 10px;
+    border-spacing: 12px;
+}
+
+tr:nth-child(even){
+    background-color:greenyellow;
+}
+tr:nth-child(odd){
+    background-color:rgb(47, 255, 255);
+}
+table{
+    background-color:white;
 }
