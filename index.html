@@ -158,14 +158,21 @@
 
     <span id="demo" style="background-color:white;"></span>
 
-    <p></p>
+    <p id="changeText">This is shown for the first time</p>
     <button onclick="imagechange()">Click meee</button>
 
-    <!-- <script>
+    <script>
+        var flipflop=0;
         function imagechange(){
-
+            if(flipflop%2==0){
+                document.getElementById("changeText").innerHTML = "This is shown for the second time";
+            }
+            else{
+                document.getElementById("changeText").innerHTML = "This is shown for the third time";
+            }
+            flipflop++;
         }
-    </script> -->
+    </script>
 
 
 
