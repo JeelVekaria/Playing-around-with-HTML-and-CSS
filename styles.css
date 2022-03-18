@@ -20,7 +20,6 @@ h1 {
   border-radius: 200px;
 }
 p {
-  color: rgb(0, 0, 0);
   font-size: 15px;
 }
 
@@ -59,4 +58,10 @@ tr:nth-child(odd){
 }
 table{
     background-color:white;
+}
+
+.thisformat{
+    color:blue;
+    background-color:white;
+    text-align: right;
 }
