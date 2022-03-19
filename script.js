@@ -49,3 +49,10 @@ function imagechange(){
         document.getElementById("changeText").style.display="block";
     }
 }
+
+var car = {
+    type:"Vroom Journy", 
+    speed:"20",
+    name:"Dodge",
+    recommanded:"yes"
+};
