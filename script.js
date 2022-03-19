@@ -1,0 +1,51 @@
+// Takes care of color changing square
+
+var sc=0;
+function switchColor(){
+    if(sc==0){
+        document.getElementById("gtsc").src = "img/blue.png";
+    }
+    if(sc==1){
+        document.getElementById("gtsc").src = "img/green.png";
+    }
+    if(sc==2){
+        document.getElementById("gtsc").src = "img/yellow.png";
+    }
+    if(sc==3){
+        document.getElementById("gtsc").src = "img/red.png";
+        sc=-1;
+    }
+    sc++;
+}
+// Clicking red box
+function red() {
+    alert("You clicked the red box! You will now be redirrected to another website.");
+  }
+// Clicking cat
+function cat(){
+    alert("You clicked the cat!")
+}
+
+// Text changing button
+var flipflop=0;
+function imagechange(){
+    if(flipflop%2==0){
+        document.getElementById("changeText").innerHTML = "This is shown for the second time";
+        document.getElementById("changeText").style.color="blue";
+        document.getElementById("changeText").style.backgroundColor="black";
+        document.getElementById("changeText").style.fontSize="20px";
+    }
+    else{
+        document.getElementById("changeText").innerHTML = "This is shown for the third time";
+        document.getElementById("changeText").style.color="green";
+        document.getElementById("changeText").style.backgroundColor="white";
+        document.getElementById("changeText").style.fontSize="25px";
+    }
+    flipflop++;
+    if(flipflop==8){
+        document.getElementById("changeText").style.display="none";
+    }
+    if(flipflop==10){
+        document.getElementById("changeText").style.display="block";
+    }
+}

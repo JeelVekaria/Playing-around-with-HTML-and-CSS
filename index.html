@@ -41,14 +41,6 @@
         <area shape="rect" coords="141,225,260,344" href="https://www.color-hex.com/color/008000">
     </map>
 
-    <script>
-        function red() {
-          alert("You clicked the red box! You will now be redirrected to another website.");
-        }
-        function cat(){
-            alert("You clicked the cat!")
-        }
-    </script>
 
 
 
@@ -163,48 +155,11 @@
     <p id="changeText">This is shown for the first time</p>
     <button onclick="imagechange()">Click meee</button>
 
-    <script>
-        var flipflop=0;
-        function imagechange(){
-            if(flipflop%2==0){
-                document.getElementById("changeText").innerHTML = "This is shown for the second time";
-                document.getElementById("changeText").style.color="blue";
-                document.getElementById("changeText").style.backgroundColor="black";
-                document.getElementById("changeText").style.fontSize="20px";
-            }
-            else{
-                document.getElementById("changeText").innerHTML = "This is shown for the third time";
-                document.getElementById("changeText").style.color="green";
-                document.getElementById("changeText").style.backgroundColor="white";
-                document.getElementById("changeText").style.fontSize="25px";
-            }
-            flipflop++;
-        }
-    </script>
 
 <br>
 <img src="img/red.png" style="float:left;" id="gtsc" onclick="switchColor()">
 
-<script>
-    var sc=0;
-    function switchColor(){
-        if(sc==0){
-            document.getElementById("gtsc").src = "img/blue.png";
-        }
-        if(sc==1){
-            document.getElementById("gtsc").src = "img/green.png";
-        }
-        if(sc==2){
-            document.getElementById("gtsc").src = "img/yellow.png";
-        }
-        if(sc==3){
-            document.getElementById("gtsc").src = "img/red.png";
-            sc=-1;
-        }
-        sc++;
-    }
-
-</script>
+<!-- odd js script was here -->
 <br>
 <br>
 <br>
@@ -220,7 +175,7 @@
 
 
 
-
+<script src="script.js"></script>
 </body>
 
 
