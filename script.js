@@ -59,10 +59,25 @@ var car = {
 
 // This line also works
 // myInterval = setInterval(requestTime, 500);
+const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
 function requestTime(){
     const d = new Date();
     ele = document.getElementById("timeShown");
-    ele.innerHTML = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
-    ele.innerHTML += d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+    ele.innerHTML = months[d.getMonth()]+" "+days[d.getDay()]+"<br>"+d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
     setInterval(requestTime,1000);
+}
+
+var s = false;
+
+function showHide(){
+    if(s){
+        document.getElementById("timeShown").style.display="none";
+    }
+    else{
+        document.getElementById("timeShown").style.display="block";
+
+    }
+    s = !s;
 }
