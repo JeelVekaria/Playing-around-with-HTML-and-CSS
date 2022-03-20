@@ -65,9 +65,16 @@ const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 function requestTime(){
     const d = new Date();
     ele = document.getElementById("timeShown");
-    ele.innerHTML = months[d.getMonth()]+" "+days[d.getDay()]+"<br>"+d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+    ele.innerHTML = months[d.getMonth()]+" "+days[d.getDay()]+"<br>"+d.getHours() + ":" + d.getMinutes() + ":";
+    if(d.getSeconds()<10){
+        ele.innerHTML += "0"+d.getSeconds();
+    }
+    else{
+        ele.innerHTML += d.getSeconds();
+    }
     setInterval(requestTime,1000);
 }
+
 
 var s = false;
 
