@@ -65,7 +65,7 @@ const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 function requestTime(){
     const d = new Date();
     ele = document.getElementById("timeShown");
-    ele.innerHTML = months[d.getMonth()]+" "+days[d.getDay()]+"<br>"+d.getHours() + ":" + d.getMinutes() + ":";
+    ele.innerHTML = months[d.getMonth()]+" "+days[d.getDay()]+"  "+d.getHours() + ":" + d.getMinutes() + ":";
     if(d.getSeconds()<10){
         ele.innerHTML += "0"+d.getSeconds();
     }
@@ -87,4 +87,7 @@ function showHide(){
 
     }
     s = !s;
+}
+function gone(){
+    document.getElementById("hoverMe").style.display="none";
 }

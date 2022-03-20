@@ -72,3 +72,10 @@ table{
     background-color:white;
     text-align: right;
 }
+
+.hovButton{
+    background-color:rgb(247, 231, 93);border: 14px solid rgb(247, 231, 93); border-radius:20px;
+}
+.hovButton:hover{
+    background-color:rgb(255, 244, 145);border: 14px solid rgb(255, 244, 145); border-radius:20px;
+}
