@@ -50,6 +50,13 @@ table, th, td {
     border-spacing: 12px;
 }
 
+table:hover{
+    border: 10px solid blue;
+}
+table:active{
+    border: 10px solid green;
+}
+
 tr:nth-child(even){
     background-color:greenyellow;
 }
