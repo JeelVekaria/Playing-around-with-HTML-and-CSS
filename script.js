@@ -56,3 +56,13 @@ var car = {
     name:"Dodge",
     recommanded:"yes"
 };
+
+// This line also works
+// myInterval = setInterval(requestTime, 500);
+function requestTime(){
+    const d = new Date();
+    ele = document.getElementById("timeShown");
+    ele.innerHTML = d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+    ele.innerHTML += d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+    setInterval(requestTime,1000);
+}
