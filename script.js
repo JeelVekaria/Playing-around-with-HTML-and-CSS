@@ -74,7 +74,6 @@ function requestTime(){
     }
     ele.innerHTML += d.getMinutes()+":";
 
-
     if(d.getSeconds()<10){
         ele.innerHTML += "0"+d.getSeconds();
     }
